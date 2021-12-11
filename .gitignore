@@ -1,0 +1,16 @@
+# Eclipse
+**/.settings/
+**/.classpath
+**/.project
+
+# Gradle
+**/build
+**/.gradle
+
+# Idea
+**/.idea/
+**/*.iml
+**/*.iws
+
+# Input
+**/input/

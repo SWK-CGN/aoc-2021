@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
+
+repositories {
+    mavenCentral()
+}
+
+ext.junitVersion = '5.8.2'
+ext.assertjVersion = '3.21.0'
+
+dependencies {
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$junitVersion"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
+
+    testImplementation "org.assertj:assertj-core:$assertjVersion"
+}
+
+test {
+    useJUnitPlatform()
+}
