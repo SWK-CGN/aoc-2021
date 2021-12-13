@@ -1,4 +1,4 @@
-# Advent of Code in Kotlin
+# Advent of Code in Java
 
 Build via `./gradlew build`.
 
