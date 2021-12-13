@@ -55,17 +55,7 @@ public class Day01Test {
     @Test
     @DisplayName("returns 7 for sample.")
     void returns7forSample() {
-        List<Integer> inst = List.of(
-                199,
-                200,
-                208,
-                210,
-                200,
-                207,
-                240,
-                269,
-                260,
-                263);
+        List<Integer> inst = List.of(199, 200, 208, 210, 200, 207, 240, 269, 260, 263);
         assertEquals(7, SonarSweep.countIncreases(inst));
     }
 }
