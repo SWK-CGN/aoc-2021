@@ -24,7 +24,7 @@ public class Utils {
     }
 
     public static List<String> inputForDay(int day) {
-        try (Stream<String> lines = Files.lines(Path.of(String.format("./input/day%d.txt", day)))) {
+        try (Stream<String> lines = Files.lines(Path.of(String.format("java-1/input/day%d.txt", day)))) {
             return lines.collect(toList());
         } catch (IOException error) {
             throw new UncheckedIOException(error);
